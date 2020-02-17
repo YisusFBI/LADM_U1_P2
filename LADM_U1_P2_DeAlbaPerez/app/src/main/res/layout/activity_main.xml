@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            android:text="Escriba su frase:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/textoArchivo"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="30sp">
+
+            <RadioButton
+                android:id="@+id/radioInterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Archivo memoria INTERNA" />
+
+            <RadioButton
+                android:id="@+id/radioSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Archivo SD" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:text="Nombre del archivo:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nombreArchivo"
+            android:layout_width="365sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:ems="10"
+            android:hint="documento1.txt"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnAbrir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Abrir" />
+
+    </LinearLayout>
+
+</LinearLayout>
